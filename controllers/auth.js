@@ -3071,7 +3071,7 @@ exports.withdrawal = async (req, res, next) => {
 
   const emailData = {
     from: process.env.EMAIL_FROM,
-    to: user.email,
+    to: `${user.email}, support@hazmick.xyz`,
     subject: "[Hazmick] Withdrawal Submitted",
     html: `<!DOCTYPE html>
     <html lang="en">
